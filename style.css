@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#clock {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#alarm-form {
+    margin-bottom: 20px;
+}
+
+#alarm-form input, #alarm-form select, #set-alarm {
+    margin: 5px;
+}
+
+#alarms-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#alarms-list ul li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#alarms-list ul li button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

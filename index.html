@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock with Alarms</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- show current time -->
+        <div class="text-center">
+            <h2>Clock with Alarm</h2>
+            <h1 id="clock"></h1>
+        </div>
+
+        <!-- Input Fiels and set alarm button -->
+        <div id="alarm-form" class="mb-4">
+            <h2>Set Alarm</h2>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label for="alarm-hour">Hour</label>
+                    <input type="number" class="form-control" id="alarm-hour" min="1" max="12">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="alarm-minute">Minute</label>
+                    <input type="number" class="form-control" id="alarm-minute" min="0" max="59">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="alarm-second">Second</label>
+                    <input type="number" class="form-control" id="alarm-second" min="0" max="59">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="alarm-ampm">AM/PM</label>
+                    <select id="alarm-ampm" class="form-control">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2 align-self-end">
+                    <button id="set-alarm" class="btn btn-primary">Set Alarm</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alarm list -->
+        <div id="alarms-list">
+            <h2>Alarms List</h2>
+            <ul id="alarms" class="list-group"></ul>
+        </div>
+
+        <!-- Stop alarm button -->
+        <div class="text-center mt-4">
+            <button id="stop-alarm" class="btn btn-danger" style="display: none;">Stop Alarm</button>
+        </div>
+        <audio id="alarm-audio" src="alarm_sound.wav" preload="auto"></audio>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
