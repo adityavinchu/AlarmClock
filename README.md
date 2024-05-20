@@ -26,7 +26,5 @@ This is a simple web application that displays a clock and allows users to set a
 -copy the link below
 -paste it in the browser
 ```sh
-https://htmlpreview.github.io/?https://github.com/adityavinchu/AlarmClock/blob/0c201d4c919c11125fbfac8aeb6352a0fdbd0d3f/index.html
-
-
+https://htmlpreview.github.io/?https://github.com/adityavinchu/AlarmClock/blob/aebd1751c9685d02eae0f88d37b53e00921bc654/index.html
 
