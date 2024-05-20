@@ -18,7 +18,7 @@ This is a simple web application that displays a clock and allows users to set a
 
 ## Setup Instructions
 
-1. **Clone the repository**:
+**Clone the repository**:
    ```sh
    git clone https://github.com/adityavinchu/AlarmClock.git
 
