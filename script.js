@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     //get data from input fields and dropdown, create an object and push into the alarms array
     function setAlarm() {
         const hour = parseInt(document.getElementById('alarm-hour').value);
-        const minute = parseInt(document.getElementById('alarm-minute').value);
-        const second = parseInt(document.getElementById('alarm-second').value);
+        const minute = parseInt(document.getElementById('alarm-minute').value) ||0;
+        const second = parseInt(document.getElementById('alarm-second').value) ||0;
         const ampm = document.getElementById('alarm-ampm').value;
 
         if (isNaN(hour) || isNaN(minute) || isNaN(second)) {
